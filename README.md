@@ -1,4 +1,4 @@
-# 🟨 Screen Helper R
+# 🔴 Screen Helper R
 
 ### Snipping, Blurring, and Screen Recording made easy. Simple, fast, and casual! 🚀
 
@@ -31,19 +31,19 @@ Screen Helper R is a Chrome extension designed to help you capture, manage, and 
   <p><b>Precision element selection</b></p>
   <img src="screen helper/2.PNG" width="85%" style="border-radius: 10px;" />
   <hr/>
-  <p><b>Blurring sensitive content</b></p>
+  <p><b>The Screen Shot</b></p>
   <img src="screen helper/3.PNG" width="85%" style="border-radius: 10px;" />
   <hr/>
-  <p><b>Screen recording with controls</b></p>
+  <p><b>Blurring sensitive content</b></p>
   <img src="screen helper/4.PNG" width="85%" style="border-radius: 10px;" />
   <hr/>
-  <p><b>Configuration options</b></p>
+  <p><b>Blurring More</b></p>
   <img src="screen helper/5.PNG" width="85%" style="border-radius: 10px;" />
   <hr/>
-  <p><b>Selecting recording area</b></p>
+  <p><b>Recording with pink border glow</b></p>
   <img src="screen helper/6.PNG" width="85%" style="border-radius: 10px;" />
   <hr/>
-  <p><b>Finalizing your capture</b></p>
+  <p><b>Recording with green border glow</b></p>
   <img src="screen helper/7.PNG" width="85%" style="border-radius: 10px;" />
 </div>
 
