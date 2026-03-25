@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Screen Helper R</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo" style="background: radial-gradient(circle, #fca5a5 0%, #ef4444 40%, #dc2626 100%); width: 32px; height: 32px; border-radius: 50%; box-shadow: 0 0 10px rgba(239, 68, 68, 0.6); display: inline-block;"></div>
+    <h1>Screen Helper R</h1>
+  </div>
+
+  <div class="actions">
+    <button id="btn-snip" class="primary-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16v16H4z" />
+        <path d="M4 9h16M9 4v16" />
+      </svg>
+      Snip Element
+    </button>
+    <button id="btn-blur" class="secondary-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M8 12h8M12 8v8" />
+      </svg>
+      Blur Element
+    </button>
+    <button id="btn-unblur" class="secondary-btn" style="margin-top: 10px; border-color: #555;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+        <path d="M21 3v5h-5" />
+      </svg>
+      Clear Blurs
+    </button>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="record-section">
+    <h2>Recording Options</h2>
+    <div class="toggle-group">
+      <label class="toggle">
+        <input type="checkbox" id="toggle-camera">
+        <span class="slider"></span>
+      </label>
+      <span>Include Camera</span>
+    </div>
+    <div class="toggle-group">
+      <label class="toggle">
+        <input type="checkbox" id="toggle-audio" checked>
+        <span class="slider"></span>
+      </label>
+      <span>Include Audio</span>
+    </div>
+    <div class="toggle-group" style="justify-content: space-between;">
+      <span>Format</span>
+      <select id="select-format"
+        style="background: var(--panel-bg); color: white; border: 1px solid var(--border-color); padding: 4px 8px; border-radius: 4px; outline: none; cursor: pointer;">
+        <option value="video">Video (WebM)</option>
+        <option value="audio">Audio Only (MP3)</option>
+      </select>
+    </div>
+    <div class="toggle-group" style="justify-content: space-between;">
+      <span>Glow Theme</span>
+      <div id="glow-colors" style="display: flex; gap: 8px;">
+        <div class="color-ball selected" data-color="blue"
+          style="width: 20px; height: 20px; border-radius: 50%; background: #3b82f6; cursor: pointer; border: 2px solid white; box-shadow: 0 0 8px #3b82f6;"
+          title="Blue"></div>
+        <div class="color-ball" data-color="green"
+          style="width: 20px; height: 20px; border-radius: 50%; background: #4ade80; cursor: pointer; border: 2px solid transparent;"
+          title="Neon Green"></div>
+        <div class="color-ball" data-color="pink"
+          style="width: 20px; height: 20px; border-radius: 50%; background: #f472b6; cursor: pointer; border: 2px solid transparent;"
+          title="Neon Pink"></div>
+        <div class="color-ball" data-color="none"
+          style="width: 20px; height: 20px; border-radius: 50%; background: transparent; cursor: pointer; border: 2px dashed #666; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #666;"
+          title="None">✗</div>
+      </div>
+    </div>
+
+    <button id="btn-record" class="record-btn">
+      <div class="record-indicator"></div>
+      Record Screen
+    </button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

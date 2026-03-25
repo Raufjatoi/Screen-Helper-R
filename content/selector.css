@@ -1,0 +1,35 @@
+:root {
+  --shr-highlight-color: rgba(59, 130, 246, 0.3);
+  --shr-border-color: #3b82f6;
+}
+
+#shr-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2147483646; /* One less than max */
+  pointer-events: none;
+}
+
+#shr-highlighter {
+  position: fixed;
+  border: 2px dashed var(--shr-border-color);
+  background-color: var(--shr-highlight-color);
+  z-index: 2147483647; /* Max z-index */
+  pointer-events: none;
+  transition: all 0.1s ease-out;
+  box-sizing: border-box;
+}
+
+.shr-blurred {
+  filter: blur(10px) !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+.shr-mode-active {
+  cursor: crosshair !important;
+}
